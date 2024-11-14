@@ -1,3 +1,5 @@
+; 1. Dla z góry zadanego ciągu znaków, wypisać pojedynczo wszystkie znaki.
+
 section .txt
 	org 100H
 	
