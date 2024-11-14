@@ -7,12 +7,12 @@ start:
     mov si, message     ; Load the address of the string "message" into SI
 
 start_loop:
-    mov al, [si]        ; Load the character ('t') from the si adress
+    mov al, [si]        ; Load the character from the si adress
     cmp al, '$'         ; Compare character with $
     je end              ; If character is $ end program
 
     mov ah, 2           ; Set up DOS function 2 (print character in DL)
-    mov dl, al          ; Load the character ('t') from the string
+    mov dl, al          ; Load the character from the string
     int 21h             
 
     mov ah, 9           ; DOS function 9 to display a string
