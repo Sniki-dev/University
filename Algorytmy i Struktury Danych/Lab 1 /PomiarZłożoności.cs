@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 
-namespace Zadanie1
+namespace PomiarZłożoności
 {
     class IteracjeAlgorytm
     {
