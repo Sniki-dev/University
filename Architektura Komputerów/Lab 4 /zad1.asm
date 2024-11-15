@@ -6,7 +6,7 @@ start:
     mov al, 215             ; Load the value 123 into AL register
     
     
-    mov ah, 0           
+    xor ah, ah          
     mov bl, 100             ; Load 100 into BL register for division
     div bl                  ; Divide AX by BL (100); result in AL = quotient, AH = remainder
                         
@@ -18,7 +18,7 @@ start:
 
  
     mov al, dh              ; Move remainder (stored in DH) back to AL
-    mov ah, 0           
+    xor ah, ah          
     mov bl, 10          
     div bl                  ; Divide AX by BL (10); result in AL = quotient, AH = remainder
 
